@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ًWeather</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+
+    <!-- start nav -->
+    <nav class="navbar navbar-expand-lg text-white p-5">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img class="logo-img d-block mx-2" src="images/logo@2x.png" alt="logo-weather">
+                <div class="text text-white mx-2">
+                    <h1 class="m-0">Weather</h1>
+                    <p class="m-0">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto d-flex  w-75">
+                    <li class="nav-item flex-grow-1 ">
+                        <a class="nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link text-white" href="#">news</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link text-white" href="#">live cameras</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link text-white" href="#">photo</a>
+                    </li>
+                    <li class="nav-item flex-grow-1">
+                        <a class="nav-link text-white" href="#">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- start main section -->
+    <section class="main-section py-5">
+        <div class="container">
+            <div class="choosen position-relative mb-5">
+                <input id="city-location" type="text" class="w-100 me-auto " autofocus placeholder="Find Your Location...">
+                <button class="btn btn-info position-absolute ">Find</button>
+            </div>
+            <div class="row">
+                <div id="today" class="col-lg-4 today p-0">
+                    <div class="head p-2 d-flex justify-content-between align-items-center">
+                        <p class="day m-0">sunday</p>
+                        <p class="date m-0">7december</p>
+                    </div>
+                    <div class="body p-2">
+                        <p class="city">cairo</p>
+                        <p class="degree">14.5 c</p>
+                        <p class="icon"><img src="" width="90px" alt=""></p>
+                        <p class="info">sunny</p>
+                    </div>
+                    <div class="footer p-2 d-flex justify-content-between align-items-center">
+                        <div class="one"><i class="fa-solid fa-umbrella"></i>20%</div>
+                        <div class="two"><i class="fa-solid fa-wind"></i>18km/h</div>
+                        <div class="three"><i class="fa-solid fa-compass"></i>east</div>
+                    </div>
+                </div>
+                <div id="tomorrow" class="col-lg-4 tomorrow p-0">
+                    <div class="head p-2">
+                        <div class="day text-center">monday</div>
+                    </div>
+                    <div class="body mt-5 d-flex justify-content-center align-items-center ">
+                        <p class="icon"><img src=""></p>
+                        <p class="degree"></p>
+                        <p class="degree-c"></p>
+                        <p class="info"></p>
+                    </div>
+                </div>
+                <div id="after-tomorrow" class="col-lg-4 p-0 after-tomorrow ">
+                    <div class="head p-2">
+                        <div class="day text-center m-0">friday</div>
+                    </div>
+                    <div class="body mt-5 d-flex justify-content-center align-items-center">
+                        <p class="icon"><img src="" alt=""></p>
+                        <p class="degree"></p>
+                        <p class="degree-c"></p>
+                        <p class="info"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 subscribe position-relative">
+                    <input type="text" class="w-100 me-auto " placeholder="Enter Your Email">
+                    <button class="btn btn-info position-absolute ">subscribe</button>
+                </div>
+                <div class="col-lg-4 icons d-flex gap-2">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+                <div class="col">
+                    <p class="my-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
